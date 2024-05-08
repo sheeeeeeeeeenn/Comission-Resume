@@ -1,120 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SAMUEL CRUZ</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uniQ Adapting Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <div id="container--main">
-
-        <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="./assets/images/Sam1.png">
-
-            <div>
-                <h1 id="user-name">SAMUEL CRUZ</h1>
-                <h2 id="bio">Computer Engineer</h2>
-                <p id="education">🎓 Bachelor of Computer Engineering, Urdaneta City University, 2026-2027</p>
-                <p id="contact-info">📍 Zone 4, Lipay, Villasis, Pangasinan</p>
-                <p id="phone">📞 +63 962-602-2052</p>
-                <p id="email">📧 <a href="mailto:cruzsamuel0512@gmail.com">cruzsamuel0512@gmail.com</a></p>
-            </div>
-
-        </section>
-
-        <section class="section--page">
-            <div id="socials--list">
-                <a href="" target="_blank">Youtube</a>
-                <a href="" target="_blank">Twitter</a>
-                <a href="" target="_blank">Linkedin</a>
-                <a href="" target="_blank">Github</a>
-                <a href="./assets/images/Sam.pdf" target="_blank">Download Resume</a>
-            </div>
-        </section>
-
-        <section class="section--page">
-            <h2>EXPERTISE</h2>
-            <ul id="qualifications--list">
-                <li>✔️ Web Design</li>
-                <li>✔️ Branding</li>
-                <li>✔️ Graphic Design</li>
-                <li>✔️ SEO</li>
-                <li>✔️ Marketing</li>
-            </ul>
-        </section>
-
-        <section class="section--page">
-            <h2>Tech</h2>
-            <div id="wrapper--techstack__items">
-                <div class="card--techstack"><span>HTML</span></div>
-                <div class="card--techstack"><span>CSS</span></div>
-                <div class="card--techstack"><span>PHP</span></div>
-            </div>
-        </section>
-
-        <section id="work-history-wrapper" class="section--page">
-            <h2>WORK EXPERIENCE</h2>
-            <div class="line-break"></div>
-            <div class="card--work-history">
-                <strong>🚧 Digital Marketing Manager</strong>
-                <p>Jan 2022- Present</p>
-                <p>Company Name l 123 Anywhere St., Any City</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                </ul>
-            </div>
-            <div class="line-break"></div>
-            <div class="card--work-history">
-                <strong>🚧 Social Media Manager</strong>
-                <p>2017 - 2019</p>
-                <p>Company Name l 123 Anywhere St., Any City</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                </ul>
-            </div>
-            <div class="line-break"></div>
-            <div class="card--work-history">
-                <strong>🚧 Social Content Manager</strong>
-                <p>2015 - 2017</p>
-                <p>Company Name l 123 Anywhere St., Any City</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                </ul>
-            </div>
-
-        </section>
-
-        <section id="references" class="section--page">
-            <h2>REFERENCES</h2>
-            <h3>Harper Russo</h3>
-            <p>📞 Phone: +123-456-7890</p>
-            <p>📧 Email: <a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a></p>
-            <p>Wardiere Inc. / CEO</p>
-        </section>
-
-        <section id="references" class="section--page">
-            <h3>Estelle Darcy</h3>
-            <p>📞 Phone: +123-456-7890</p>
-            <p>📧 Email: <a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a></p>
-            <p>Wardiere Inc. / CEO</p>
-        </section>
-
-
-        <section id="languages" class="section--page">
-            <h2>LANGUAGE</h2>
-            <ul>
-                <li>English</li>
-                <li>Filipino</li>
-            </ul>
-        </section>
-
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <h2>UniQ Adapting Learning</h2>
+        </div>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="help.html">Help & Support</a></li>
+        </ul>
     </div>
+    <div class="main-content">
+        <header class="dashboard-header">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
 
+
+            <div class="profile-icons">
+                <i class="fas fa-envelope"><span class="notification-icon"></span></i>
+                <i class="fas fa-bell"><span class="notification-dot"></span></i>
+                <i class="fas fa-user-circle"></i>
+            </div>
+
+        </header>
+
+        <section class="input-fields">
+            <div class="field field-student-name">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" placeholder="Last Name, First Name">
+            </div>
+            <div class="field">
+                <label for="moduleGrade">Module Grade:</label>
+                <input type="number" id="moduleGrade" placeholder="Enter Module Grade">
+            </div>
+            <div class="field">
+                <label for="videoGrade">Video Grade:</label>
+                <input type="number" id="videoGrade" placeholder="Enter Video Grade">
+            </div>
+            <div class="field">
+                <label for="textChatGrade">Text Chat Grade:</label>
+                <input type="number" id="textChatGrade" placeholder="Enter Text Chat Grade">
+            </div>
+            <div class="field">
+                <label for="meetingGrade">Meeting Grade:</label>
+                <input type="number" id="meetingGrade" placeholder="Enter Meeting Grade">
+            </div>
+        </section>
+        <div id="toaster" class="toaster" style="display: none;">Please enter all required fields correctly.</div>
+        <button onclick="addStudentGrades()">Add Student Grades</button>
+        <div class="chart-container">
+            <div class="chart" id="lineChartContainer">
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="chart" id="pieChartContainer">
+                <canvas id="pieChart"></canvas>
+            </div>
+            <div class="chart" id="columnChartContainer">
+                <canvas id="columnChart"></canvas>
+            </div>
+            <div class="chart results" id="resultsContainer">
+                Results will appear here.
+            </div>
+            <button onclick="exportToExcel()">Export to Excel</button>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
